@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="otg.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <section class="student-profile">
+    <header class="header" id="header">
+      <div class="header-content">
+        <i class="fa-solid fa-bars header-icon" onclick="openNav()"></i>
+        <h1 class="profile-title">Onboard Training</h1>
+        <div class="header-icons">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/94206e1e328b835ec2676dad7a344238f0f6709d5406675b37c3c64035297882?placeholderIfAbsent=true&apiKey=04c4880e7ead49f39b7cf7e5c9a35e0d"
+            alt="Student profile picture" class="profile-picture" />
+        </div>
+      </div>
+
+    </header>
+    <div id="mySidenav" class="sidenav" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)"
+      ontouchend="touchEnd(event)">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidenav-container">
+        <div class="sidenav-profile">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/94206e1e328b835ec2676dad7a344238f0f6709d5406675b37c3c64035297882?placeholderIfAbsent=true&apiKey=04c4880e7ead49f39b7cf7e5c9a35e0d"
+            alt="Student profile picture" class="" />
+          <div class="sidenav-content">
+            <h1>Juan A Dela Cruz</h1>
+            <p>Student</p>
+            <a class="profile-link" href="#">View Profile</a>
+
+          </div>
+        </div>
+        <hr class="profile-line">
+
+      </div>
+      <hr class="profile-line2">
+
+
+
+      <a class="link" href="#"><i class="fa-solid fa-house"></i>Home</a>
+      <a class="link" href="#"><i class="fa-solid fa-dharmachakra"></i>Onboard Training Guidance</a>
+      <a class="link" href="#"><i class="fa-solid fa-upload"></i>Upload</a>
+      <a class="link" href="#"><i class="fa-solid fa-folder"></i>Modules</a>
+
+
+      <a href="#" class="settings"><i class="fa-solid fa-sliders"></i>Settings</a>
+    </div>
+
+    <div class="mobile-container">
+      <ol class="breadcrumb-container">
+        <li>Vessel info <i class="fa-solid fa-chevron-right"></i></li>
+      </ol>
+
+      <div class="col-md-12">
+      <h3 class="training-title mt-3">Onboard Training Guidance</h3>
+      </div>
+      <hr style="border: gray 1px solid; border-radius: 50px; width: 100%;">
+      
+      
+
+      <section class="student-info-container mt-5">
+        
+      
+        <div class="student-info-card">
+          
+          <header class="student-info-header">
+            
+            
+            <div class="name-info" >
+              <p style="font-weight: 500;">Name of Student:</p>
+              
+              <p class="info-container" onclick="openEditModal(this)">Juan Dela Cruz</p>
+            </div>
+              
+              <div class="mhei-info">
+                <p style="font-weight: 500;">Name of MHEI:</p>
+                
+                <p class="info-container" onclick="openEditModal(this)">00000000000</p>
+              </div>
+
+          </header>
+
+          <div id="editModal" class="modal">
+            <div class="modal-content">
+              <span class="close " id="closeModal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                <path fill="currentColor"
+                  d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m5.4 21L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+              </svg></span>
+              <h2>Edit Content</h2>
+              <form id="modalForm">
+                <label for="modalInput">Update Content:</label>
+                <input type="text" id="modalInput" />
+                <button type="button" id="saveModal">Save</button>
+              </form>
+            </div>
+          </div>
+      
+        </div>
+
+        
+      
+      </section>
+
+     
+
+      <section class="fill-up-form-container">
+        <div  class="fill-up-info-header">
+          <div class="vessel-name">
+            <p style="font-size: 14px;">Name of Vessel:</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="currentColor"
+                  d="M14.211 17.776a4 4 0 0 1 3.364-.099l.214.1l2.658 1.328a1 1 0 0 1-.787 1.835l-.107-.046l-2.659-1.329a2 2 0 0 0-1.617-.076l-.172.076l-1.316.659a4 4 0 0 1-3.365.098l-.213-.098l-1.317-.659a2 2 0 0 0-1.617-.076l-.172.076l-2.658 1.33a1 1 0 0 1-.996-1.731l.102-.059l2.658-1.329a4 4 0 0 1 3.364-.099l.214.1l1.316.658a2 2 0 0 0 1.618.076l.171-.076zM13 2a1 1 0 0 1 1 1v1.32l3.329.554a2 2 0 0 1 1.67 1.973v3.432l2.06.686a1.25 1.25 0 0 1 .753 1.679l-2.169 5.06l-1.854-.928a4 4 0 0 0-3.578 0l-1.317.659a2 2 0 0 1-1.789 0l-1.316-.659a4 4 0 0 0-3.578 0l-1.27.636l-2.658-4.651a1.25 1.25 0 0 1 .69-1.806L5 10.279V6.847a2 2 0 0 1 1.67-1.973L10 4.32V3a1 1 0 0 1 1-1zm-1 4.014l-5 .833v2.766l4.367-1.456a2 2 0 0 1 1.265 0L17 9.613V6.847z" />
+              </g>
+            </svg>MV Maria</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="currentColor"
+                  d="M14.211 17.776a4 4 0 0 1 3.364-.099l.214.1l2.658 1.328a1 1 0 0 1-.787 1.835l-.107-.046l-2.659-1.329a2 2 0 0 0-1.617-.076l-.172.076l-1.316.659a4 4 0 0 1-3.365.098l-.213-.098l-1.317-.659a2 2 0 0 0-1.617-.076l-.172.076l-2.658 1.33a1 1 0 0 1-.996-1.731l.102-.059l2.658-1.329a4 4 0 0 1 3.364-.099l.214.1l1.316.658a2 2 0 0 0 1.618.076l.171-.076zM13 2a1 1 0 0 1 1 1v1.32l3.329.554a2 2 0 0 1 1.67 1.973v3.432l2.06.686a1.25 1.25 0 0 1 .753 1.679l-2.169 5.06l-1.854-.928a4 4 0 0 0-3.578 0l-1.317.659a2 2 0 0 1-1.789 0l-1.316-.659a4 4 0 0 0-3.578 0l-1.27.636l-2.658-4.651a1.25 1.25 0 0 1 .69-1.806L5 10.279V6.847a2 2 0 0 1 1.67-1.973L10 4.32V3a1 1 0 0 1 1-1zm-1 4.014l-5 .833v2.766l4.367-1.456a2 2 0 0 1 1.265 0L17 9.613V6.847z" />
+              </g>
+            </svg>MV Maria</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                <path fill="currentColor"
+                  d="M14.211 17.776a4 4 0 0 1 3.364-.099l.214.1l2.658 1.328a1 1 0 0 1-.787 1.835l-.107-.046l-2.659-1.329a2 2 0 0 0-1.617-.076l-.172.076l-1.316.659a4 4 0 0 1-3.365.098l-.213-.098l-1.317-.659a2 2 0 0 0-1.617-.076l-.172.076l-2.658 1.33a1 1 0 0 1-.996-1.731l.102-.059l2.658-1.329a4 4 0 0 1 3.364-.099l.214.1l1.316.658a2 2 0 0 0 1.618.076l.171-.076zM13 2a1 1 0 0 1 1 1v1.32l3.329.554a2 2 0 0 1 1.67 1.973v3.432l2.06.686a1.25 1.25 0 0 1 .753 1.679l-2.169 5.06l-1.854-.928a4 4 0 0 0-3.578 0l-1.317.659a2 2 0 0 1-1.789 0l-1.316-.659a4 4 0 0 0-3.578 0l-1.27.636l-2.658-4.651a1.25 1.25 0 0 1 .69-1.806L5 10.279V6.847a2 2 0 0 1 1.67-1.973L10 4.32V3a1 1 0 0 1 1-1zm-1 4.014l-5 .833v2.766l4.367-1.456a2 2 0 0 1 1.265 0L17 9.613V6.847z" />
+              </g>
+            </svg>MV Maria</p>
+          </div>
+          <div class="vessel-type">
+            <p style="font-size: 14px;">Type of Vessel:</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M2.88 18.05a35.9 35.9 0 0 1 8.53-16.322a.8.8 0 0 1 1.178 0q.25.27.412.456a35.9 35.9 0 0 1 8.119 15.864a44 44 0 0 1-6.584.875L12.447 23.1a.5.5 0 0 1-.894 0l-2.089-4.177a44 44 0 0 1-6.584-.875m6.697-1.123l1.158.066L12 19.523l1.265-2.53l1.157-.066a42 42 0 0 0 4.227-.455a33.9 33.9 0 0 0-6.65-12.387a33.9 33.9 0 0 0-6.648 12.387a42 42 0 0 0 4.226.455M12 14.995a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+            </svg>Container</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M2.88 18.05a35.9 35.9 0 0 1 8.53-16.322a.8.8 0 0 1 1.178 0q.25.27.412.456a35.9 35.9 0 0 1 8.119 15.864a44 44 0 0 1-6.584.875L12.447 23.1a.5.5 0 0 1-.894 0l-2.089-4.177a44 44 0 0 1-6.584-.875m6.697-1.123l1.158.066L12 19.523l1.265-2.53l1.157-.066a42 42 0 0 0 4.227-.455a33.9 33.9 0 0 0-6.65-12.387a33.9 33.9 0 0 0-6.648 12.387a42 42 0 0 0 4.226.455M12 14.995a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+            </svg>Container</p>
+            <p class="fill-container"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M2.88 18.05a35.9 35.9 0 0 1 8.53-16.322a.8.8 0 0 1 1.178 0q.25.27.412.456a35.9 35.9 0 0 1 8.119 15.864a44 44 0 0 1-6.584.875L12.447 23.1a.5.5 0 0 1-.894 0l-2.089-4.177a44 44 0 0 1-6.584-.875m6.697-1.123l1.158.066L12 19.523l1.265-2.53l1.157-.066a42 42 0 0 0 4.227-.455a33.9 33.9 0 0 0-6.65-12.387a33.9 33.9 0 0 0-6.648 12.387a42 42 0 0 0 4.226.455M12 14.995a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+            </svg>Container</p>
+          </div>
+          <div class="flag-nationality">
+            <p style="font-size: 14px;">Flag Nationality:</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M5 21V4h9l.4 2H20v10h-7l-.4-2H7v7z" />
+            </svg>Norwegian</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M5 21V4h9l.4 2H20v10h-7l-.4-2H7v7z" />
+            </svg>Norwegian</p>
+            <p class="fill-container" onclick="openEditModal(this)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M5 21V4h9l.4 2H20v10h-7l-.4-2H7v7z" />
+            </svg>Norwegian</p>
+          </div>
+          
+        </div>
+        <div class="addButton" onclick="addRow()">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+            <path fill="currentColor"
+              d="M16 2A14.173 14.173 0 0 0 2 16a14.173 14.173 0 0 0 14 14a14.173 14.173 0 0 0 14-14A14.173 14.173 0 0 0 16 2m8 15h-7v7h-2v-7H8v-2h7V8h2v7h7Z" />
+            <path fill="none" d="M24 17h-7v7h-2v-7H8v-2h7V8h2v7h7z" />
+          </svg>
+          </div>
+      </section>
+
+      <div class="btn-container">
+        <button class="button button-next" aria-label="to get next slide">Next <i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+    
+
+    <nav class="navigation" id="navigation">
+      <div class="nav-content">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="profileprogress.js"></script>
+  <script>
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0"; // Open the sidebar from the left
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-350px"; // Close the sidebar
+    }
+
+    function touchStart(event) {
+      // Capture the initial touch position
+      touchStartX = event.touches[0].clientX;
+    }
+
+    function touchMove(event) {
+      // Continuously track touch position (optional, for tracking swipe movement)
+      touchEndX = event.touches[0].clientX;
+    }
+
+    function touchEnd() {
+      // Calculate the swipe distance
+      if (touchEndX < touchStartX - 50) {
+        // If swipe was leftwards by more than 50px, close the sidebar
+        closeNav();
+      }
+    }
+  </script>
+
+
+<script src="otg.js"></script>
+</body>
+
+</html>

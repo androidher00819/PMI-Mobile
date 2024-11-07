@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="profile_info.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <section class="student-profile">
+    <header class="header" id="header">
+      <div class="header-content">
+        <i class="fa-solid fa-bars header-icon" onclick="openNav()"></i>
+        <h1 class="profile-title">Student</h1>
+        <div class="header-icons">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </div>
+
+    </header>
+    <div id="mySidenav" class="sidenav" ontouchstart="touchStart(event)" ontouchmove="touchMove(event)"
+      ontouchend="touchEnd(event)">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidenav-container">
+        <div class="sidenav-profile">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/94206e1e328b835ec2676dad7a344238f0f6709d5406675b37c3c64035297882?placeholderIfAbsent=true&apiKey=04c4880e7ead49f39b7cf7e5c9a35e0d"
+            alt="Student profile picture" class="" />
+          <div class="sidenav-content">
+            <h1>Juan A Dela Cruz</h1>
+            <p>Student</p>
+            <a class="profile-link" href="#">View Profile</a>
+
+          </div>
+        </div>
+        <hr class="profile-line">
+
+      </div>
+      <hr class="profile-line2">
+
+
+
+      <a class="link" href="#"><i class="fa-solid fa-house"></i>Home</a>
+      <a class="link" href="#"><i class="fa-solid fa-dharmachakra"></i>Onboard Training Guidance</a>
+      <a class="link" href="#"><i class="fa-solid fa-upload"></i>Upload</a>
+      <a class="link" href="#"><i class="fa-solid fa-folder"></i>Modules</a>
+
+
+      <a href="#" class="settings"><i class="fa-solid fa-sliders"></i>Settings</a>
+    </div>
+
+    <div class="mobile-container">
+      <ol class="breadcrumb-container">
+        <li>Vessel info <i class="fa-solid fa-chevron-right"></i></li>
+        <li style="text-decoration: underline;">Profile Info <i class="fa-solid fa-chevron-right"></i></li>
+      </ol>
+      <div class="col-md-12">
+      <h3 class="training-title mt-3">Onboard Training Guidance</h3>
+      </div>
+      <hr style="border: gray 1px solid; border-radius: 50px; width: 100%;">
+      
+
+      <div class="img-container">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/94206e1e328b835ec2676dad7a344238f0f6709d5406675b37c3c64035297882?placeholderIfAbsent=true&apiKey=04c4880e7ead49f39b7cf7e5c9a35e0d"
+        alt="Student profile picture" class="mx-auto img-fluid d-block" width="180px" />
+      </div>
+
+      
+
+    <div class="profile-container">
+      <p class="text-center" style="font-size: 24px; padding-top: 80px;">Juan Dela Cruz</p>
+      <p>Student ID : 400936150596</p>
+      <p>Course: BSMarE</p>
+      <p>Batch: 2023 - 2024</p>
+      <p>MHEI: 00000000</p>
+      <div class="vessel-info">
+        <button>Name of Vessel</button>
+        <button>Type of Vessel</button>
+        <button>Flag Nationality</button>
+      </div>
+      <div class="performance-section">
+        <p>Overall Performance</p>
+        <p>80%</p>
+      </div>
+      <div class="chart-container">
+        <hr class="chart-background">
+      </div>
+    </div>
+
+
+    <div class="btn-container">
+      <button class="button button-next" aria-label="to get next slide">Next <i
+          class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    
+    
+
+    </div>
+    
+
+    <nav class="navigation" id="navigation">
+      <div class="nav-content">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="profileprogress.js"></script>
+  <script>
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0"; // Open the sidebar from the left
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-350px"; // Close the sidebar
+    }
+
+    function touchStart(event) {
+      // Capture the initial touch position
+      touchStartX = event.touches[0].clientX;
+    }
+
+    function touchMove(event) {
+      // Continuously track touch position (optional, for tracking swipe movement)
+      touchEndX = event.touches[0].clientX;
+    }
+
+    function touchEnd() {
+      // Calculate the swipe distance
+      if (touchEndX < touchStartX - 50) {
+        // If swipe was leftwards by more than 50px, close the sidebar
+        closeNav();
+      }
+    }
+  </script>
+</body>
+
+</html>
